@@ -4,12 +4,12 @@ a {
 
 
 /* setari pagina */
-
-.site {
+.site {    
     margin: 0 auto;
-    background-color: rgb(219, 219, 219);
-    width: 1200px;
-    height: 1000px;
+    background-color: rgb(201, 201, 201);
+    width: 1220px;
+    height: auto;
+    border-radius: 10px;
 }
 
 /* setari header */
@@ -65,8 +65,13 @@ a {
     margin-top: -30px;
 }
 
-.menu-logos img:hover{
+.menu-logos img:hover,.reclama img:hover{
     transform: scale(1.05);
+}
+
+.menu-logos img:active,.reclama img:active,.header-logo:a{
+    transform: scale(1);
+    opacity: 0.7;
 }
 
 /* menu buttons (header sectiune 4) */
@@ -108,7 +113,7 @@ a {
 
 .input-login input {
     height: 22px;
-    width: 200px;
+    width: 233px;
     margin: 5px;
     border-radius: 10px;
     border: none;
@@ -154,12 +159,14 @@ a {
 
 .btn:hover, .btn-login:hover {
     background: linear-gradient(to bottom, rgba(255, 12, 12, 0.9), rgba(255, 0, 0, 0.9));
-    transform: scale(1.05);
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .btn-cont:hover {
     background: linear-gradient(to bottom, rgba(11, 143, 7, 0.9), rgba(37, 255, 8, 0.9));
     transform: scale(1.05);
+    cursor: pointer;
 }
 
 .btn:active, .btn-login:active, .btn-cont:active {
@@ -168,4 +175,253 @@ a {
 }
 
 /* main */
+
+.main{
+    margin-top: 5px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    height: auto;
+}
+
+/* left-menu (main) */
+.left-menu{
+    margin-left: 10px;
+}
+
+.titlu-produse{
+    width: 260px;
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(114, 11, 11, 0.9), rgba(255, 0, 0, 0.9));
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.categorii-produse{
+    width: 260px;
+    height: auto;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 7px;
+}
+
+.titlu-produse a,.titlu-continut-acasa a,.submenus a,.titlu-continut-produse a{
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+}
+
+.categ-produs{
+    margin: 5px;
+    margin-left: 20px;
+}
+
+.categ-produs a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.categ-produs:hover{
+    transform: scale(1.1);
+    color: red;
+    cursor: pointer;
+}
+
+/* mid-menu (main) */
+
+.mid-menu{
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+}
+
+.continut-acasa{
+    width: 100%;
+    height: 375px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.continut-acasa img{
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.titlu-continut-acasa,.titlu-continut-produse{
+    width: 100%;
+    height: 25px;
+    background: linear-gradient(to bottom, rgba(114, 11, 11, 0.9), rgba(255, 0, 0, 0.9));
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produse{
+    margin-top: 10px;
+    background-color: rgb(128, 128, 128);
+    width: 100%;
+    height: 770px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.numere,.pagini{
+    display: flex;
+}
+
+.pagnr{
+    margin-left: 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.pagnr:hover:not(.pag1){
+    color: purple;
+}
+
+.pagnr:active{
+    opacity: 0.4;
+}
+
+.pag1{
+    color: red;
+}
+
+.produsele1-15{
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.pagini{
+    margin-top: 5px;
+    margin-right: 5px;
+}
+
+.produse-pagini{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* right-menu (main) */
+.right-menu{
+    margin-right: 10px;
+}
+
+.submenu,.reclame{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.submenu{
+    height: 372px;
+}
+
+.reclame{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 15px;
+    background-color: rgb(128, 128, 128);
+    height: 750px;
+    border: solid;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.right-submenu{
+    display: flex;
+    flex-direction: column;
+}
+
+.submenus{
+    margin-top: 0px;
+    width: 190px;
+    height: 35px;
+    background: linear-gradient(to bottom, rgba(114, 11, 11, 0.9), rgba(255, 0, 0, 0.9));
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submenus a{
+    font-size: 15px;
+}
+
+/* footer */
+
+.footer{
+    margin-top: 15px;
+    width: 100%;
+    height: 50px;
+    background-color: rgb(99, 99, 99);  
+    border-radius: 10px;  
+}
+
+.home-sierra{
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: 20px;
+}
+
+.site-produs{
+    display: flex;
+    justify-content: space-between;
+    width: 220px;
+}
+
+.produs-de{
+    color: white;
+}
+
+.copyright{
+    color: white;
+}
+
+.continut-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.copyright,.home-sierra,.site-produs{
+    margin-top: 15px;
+}
+
+.copyright{
+    margin-left: 25px;
+}
+
+.home:hover,.despre:hover,.contact:hover{
+    transform: scale(1.05);
+}
+
+.home:active,.despre:active,.contact:active{
+    transform: scale(1);
+    opacity: 0.5;
+}
+
+.site-produs{
+    margin-right: 25px;
+}
+
+
+
+
 
