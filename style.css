@@ -406,6 +406,7 @@ a {
 
 .copyright{
     margin-left: 25px;
+}
 
 .home:hover,.despre:hover,.contact:hover{
     transform: scale(1.05);
