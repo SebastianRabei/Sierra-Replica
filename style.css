@@ -1,0 +1,171 @@
+a {
+    text-decoration: none;
+}
+
+
+/* setari pagina */
+
+.site {
+    margin: 0 auto;
+    background-color: rgb(219, 219, 219);
+    width: 1200px;
+    height: 1000px;
+}
+
+/* setari header */
+
+.header {
+    width: 100%;
+    height: 140px;
+    /* background-color: turquoise; */
+    display: flex;
+}
+
+/* logo (header sectiune 1) */
+
+.header-logo {
+    padding: 20px;
+}
+
+.header-logo:hover{
+    transform: scale(1.05);
+}
+
+/* despre (header sectiune 2) */
+
+.menu-despre {
+    margin-top: 15px;
+}
+
+.menu-despre a {
+    color: black;
+    font-size: 15px;
+}
+
+/* logos + buton cos (header sectiune 3) */
+
+.menu-logos-cos {
+    display: flex;
+}
+
+.menu-logos {
+    margin-top: 15px;
+    display: flex;
+    width: 535px;
+    justify-content: space-between;
+}
+
+.menu-right-logos img {
+    margin-top: -5px;
+    width: 100px;
+}
+
+.menu-btn-cos {
+    margin-left: 15px;
+    margin-top: -30px;
+}
+
+.menu-logos img:hover{
+    transform: scale(1.05);
+}
+
+/* menu buttons (header sectiune 4) */
+
+.menu-buttons {
+    width: 650px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    margin-top: 15px;
+    width: 100px;
+    height: 30px;
+    background: linear-gradient(to bottom, rgba(114, 11, 11, 0.9), rgba(255, 0, 0, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;
+}
+
+/*  login data (header sectiune 5) */
+
+.login-data {
+    margin-top: 15px;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.input-login input {
+    height: 22px;
+    width: 200px;
+    margin: 5px;
+    border-radius: 10px;
+    border: none;
+}
+
+.menu-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttons-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-login, .btn-cont {
+    margin: 5px;
+    width: 80px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    border-radius: 5px;
+    color: white;   
+    font-size: 12px;
+}
+
+.btn-login {
+    background: linear-gradient(to bottom, rgba(114, 11, 11, 0.9), rgba(255, 0, 0, 0.9));
+}
+
+.btn-cont {
+    background: linear-gradient(to bottom, rgba(2, 65, 0, 0.9), rgba(37, 255, 8, 0.9));
+}
+
+.reset-password {
+    font-size: 13px;
+}
+
+.btn:hover, .btn-login:hover {
+    background: linear-gradient(to bottom, rgba(255, 12, 12, 0.9), rgba(255, 0, 0, 0.9));
+    transform: scale(1.05);
+}
+
+.btn-cont:hover {
+    background: linear-gradient(to bottom, rgba(11, 143, 7, 0.9), rgba(37, 255, 8, 0.9));
+    transform: scale(1.05);
+}
+
+.btn:active, .btn-login:active, .btn-cont:active {
+    opacity: 0.7;
+    transform:scale(1);
+}
+
+/* main */
+
