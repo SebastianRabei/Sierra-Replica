@@ -69,7 +69,7 @@ a {
     transform: scale(1.05);
 }
 
-.menu-logos img:active,.reclama img:active,.header-logo:a{
+.menu-logos img:active,.reclama img:active,.header-logo:active{
     transform: scale(1);
     opacity: 0.7;
 }
@@ -113,7 +113,7 @@ a {
 
 .input-login input {
     height: 22px;
-    width: 233px;
+    width: 230px;
     margin: 5px;
     border-radius: 10px;
     border: none;
@@ -209,6 +209,24 @@ a {
     border-radius: 7px;
 }
 
+.dropdown{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-content{
+    display: none;
+    margin-left: 10px;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}  
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
 .titlu-produse a,.titlu-continut-acasa a,.submenus a,.titlu-continut-produse a{
     font-size: 17px;
     font-weight: bold;
@@ -255,6 +273,37 @@ a {
     border-radius: 5px;
 }
 
+.derulare-img{
+    top: -55px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.nr-img{
+    width: 20px;
+    height: 20px;
+    background-color: rgb(240, 240, 240) ;
+    margin: 3px; 
+    border-radius: 3px;  
+    cursor:pointer;  
+}
+
+.nr-img a{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+}
+
+.nr-img:hover{
+    transform: scale(1.05);
+}
+
+.nr-img:active{
+    transform: scale(1);
+    opacity: 0.5;
+}
+
 .titlu-continut-acasa,.titlu-continut-produse{
     width: 100%;
     height: 25px;
@@ -265,11 +314,11 @@ a {
     justify-content: center;
 }
 
-.produse{
+.componente-produse{
     margin-top: 10px;
     background-color: rgb(128, 128, 128);
     width: 100%;
-    height: 770px;
+    height: 722px;
     border-style: solid;
     border-width: 1px;
     border-radius: 10px;
@@ -298,7 +347,7 @@ a {
     color: red;
 }
 
-.produsele1-15{
+.produsele1-9{
     margin-top: 5px;
     margin-left: 5px;
 }
@@ -313,10 +362,67 @@ a {
     justify-content: space-between;
 }
 
+.linie-produs{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.produse{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.produs{
+    background-color: white;
+    width: 220px;
+    height: 200px;
+    border-radius: 10px ;
+    border: solid;
+    border-width: 1px;
+}
+
+.produs-flex a{
+    margin-top: 10  px;
+    font-size: 15px;
+}
+
+.titlu-produs{
+    font-size: 10px;
+    margin: 12px;
+    color: red;
+}
+
+.cod-produs,.pret-produs{
+    display: flex;
+    flex-direction:column ;
+}
+
+.produs-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.poza-produs{
+    margin-top: 15px;
+    margin-left: 5px;
+}
+
+.specificatii-produs{
+    display: flex;
+    flex-direction: column  ;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-content: center;
+}
+
 
 /* right-menu (main) */
 .right-menu{
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 .submenu,.reclame{
@@ -337,7 +443,7 @@ a {
     padding-bottom: 10px;
     margin-top: 15px;
     background-color: rgb(128, 128, 128);
-    height: 750px;
+    height: 700px;
     border: solid;
     border-radius: 10px;
     border-width: 1px;
@@ -350,7 +456,7 @@ a {
 
 .submenus{
     margin-top: 0px;
-    width: 190px;
+    width: 185px;
     height: 35px;
     background: linear-gradient(to bottom, rgba(114, 11, 11, 0.9), rgba(255, 0, 0, 0.9));
     border-radius: 5px;
@@ -422,6 +528,13 @@ a {
     margin-right: 25px;
 }
 
+.stoc-produs{
+    color: green;
+}
+
+.stoc-produs-zero{
+    color: red;
+}
 
 
 
